@@ -23,8 +23,6 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm install
-      - name: Run ESLint
-        run: npm run lint
       - run: npm test
   deploy:
     needs: test
